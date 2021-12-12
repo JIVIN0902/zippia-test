@@ -1,0 +1,40 @@
+export type Job = {
+  OBJcity: string;
+  OBJcompanyDisplay: string;
+  OBJcompanyID: number;
+  OBJcountry: string;
+  OBJindustry: string;
+  OBJjobTags: string[];
+  OBJpostingDate: string;
+  OBJstate: string;
+  OBJtitle: string;
+  OBJtitleDisplay: string;
+  OBJurl: string;
+  OBJzipcode: string;
+  companyID: number;
+  companyInitial: string;
+  companyName: string;
+  companyZippiaOverallScore: number;
+  contactEmailsFlag: boolean;
+  cpc: number;
+  easyApplyFlag: boolean;
+  estimatedSalary: string;
+  jobDLPUrl: string;
+  jobId: string;
+  jobTitle: string;
+  listingHash: string;
+  location: string;
+  originalCPC: string;
+  postedDate: string;
+  shortDesc: string;
+  showNewJobBedge: true;
+  skillsets: string[];
+  socode: string;
+  source: string;
+  sponsorFlag: any;
+};
+
+export type JobResult = {
+  jobs: Job[];
+  totalJobs: number;
+};
